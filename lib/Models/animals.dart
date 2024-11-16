@@ -1,18 +1,24 @@
-import 'dart:ffi';
+class Animals {
+  String nome;
+  int chip;
+  String especie;
+  String? idade;
+  String? sexo;
+  double? peso;
+  String? porte;
+  String? cor;
+  String? caracteristica;
+  String adocao;
 
-class   Animals {
-  String name;
-  Int chip;
-  
-
-  Animals({
-    required this.name,
-    required this.chip,
-
-  });
-
-  String get _name => name;
-
-
-
+  Animals(
+      {required this.nome,
+      required this.chip,
+      required this.especie,
+      required this.adocao,
+      this.idade,
+      this.sexo,
+      this.peso,
+      this.porte,
+      this.cor,
+      this.caracteristica});
 }
